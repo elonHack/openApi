@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}| Sign Up{% endblock title %}
+
+{% block content %}
+
+<div class="card w-50 mb-3 m-auto mt-5 pt-5">
+    <div class="card-body">
+        <h5 class="card-title">Sign Up</h5>
+        <form action="{% url 'register' %}" method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="username" class="form-label">Username:</label>
+                <input type="text" required name="username" class="form-control" id="username">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" required class="form-control" id="email" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Password</label>
+                <input type="password" required name="password" class="form-control" id="email">
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <a class="p-5" href="#">Forgot Password?</a>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+{% endblock content %}

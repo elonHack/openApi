@@ -1,0 +1,253 @@
+/* navbar for mobile */
+@media screen and  (max-width:800px) {
+    #menu{
+    position: absolute;
+    top: .4%;
+    right: 5%;
+    cursor: pointer;
+}
+#menu span{
+    width: 30px;
+    height: 4px;
+    background-color:var(--sec-text-color);
+    margin: 0.3rem 0;
+    display: block;
+    cursor: pointer;
+}
+#menu .span_small{
+    width: 25px;
+}
+
+#close_menu{
+    position: absolute;
+    top: 0.3%;
+    right: 5%;
+    cursor: pointer;
+    display: none;
+    font-size: 2rem;
+    color: var(--sec-text-color);
+}
+
+.navbar{
+    width: 100%;
+    background-color:#1f1e1e;
+    height: 100vh;
+    position: absolute;
+    display: none;
+}
+.navbar_ul{
+    text-align: center;
+    padding: 1rem 0;
+}
+.navbar_list{
+    margin: 1rem 0;
+    color: var(--sec-text-color);
+}
+.navbar_list a{
+    font-size: 1.5rem;
+    color: var(--sec-text-color);
+}
+.main_image img{
+    display: block;
+    margin: auto;
+    margin-top: 3rem;
+    width: 320px;
+}
+.card_2{
+    margin-left: 1.5rem;
+}
+.item_title{
+    display: none;
+}
+.sidebar_items ul li span{
+    display: none;
+}
+.sidebar_items ul{
+    display: block;
+    margin: 2rem auto;
+}
+.sidebar{
+    width:15%;
+    padding: 1rem;
+}
+.sidebar_title h3 span{
+    display: none;
+}
+.sidebar_title h3{
+    font-size: 2rem;
+    padding: 0 0.3rem;
+}
+.sidebar_items ul li i{
+    font-size: 30px;
+}
+.sidebar_items ul li{
+    margin: 1.5rem 0;
+}
+.sidebar_down {
+    position: fixed;
+    bottom: 0.5%;
+}
+.card{
+    margin-left: 0;
+}
+.new_bot span{
+    display: none;
+}
+.new_bot button{
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--sec-text-color);
+    background-color: var(--hover-color);
+    border: none;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.form_bot{
+    left: 55%;
+}
+}
+@media screen and (min-width:800px) {
+    .title h3{
+        font-size: 2rem;
+        padding:1rem 2.4rem;
+    }
+    .navigation{
+        display: flex;
+    }
+    .navbar_ul{
+        display: flex;
+        margin: 2.6rem 2rem;
+    }
+    .navbar_list{
+        margin: 0 1.3rem;
+    }
+    .navbar_list a{
+        font-size: 1rem;
+        color: var(--sec-text-color);
+    }
+    .navbar .signup{
+        margin-left: auto;
+        color: var(--sec-text-color);
+    }
+    .navbar{
+        width: 100%;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    .list{
+        margin-left: 4rem;
+    }
+    .main_image img{
+       width: 400px;
+       margin-left: 1rem;
+    }
+    .main_text{
+        padding-left: 2rem;
+    }
+    .main_text h1{
+        font-size: 3rem;
+    }
+    .section_one{
+        display: flex;
+    }
+    .section_two{
+        padding: 3rem;
+    }
+    #close_menu{
+        display: none;
+    }
+    .triangle_model{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    .utd_title{
+        margin-right: 5rem;
+    }
+    .hr{
+        background-color: var(--sec-text-color);
+        width: 100px;
+        display: block;
+        transform: rotate(90deg);
+    }
+    .section_three{
+        display: flex;
+    }
+    .about_cards{
+        display: flex;
+    }
+    .ab_card{
+        margin-left: 1.8rem;
+    }
+    .card_2{
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    .plan_card{
+        display: flex;
+    }
+    .pl_card{
+        margin-left: 1.5rem;
+    }
+    .pl_two .features ul{
+        margin-left: 4rem;
+    }
+    footer{
+        display: flex;
+        padding: 2rem;
+        height: 300px;
+    }
+    .footer_links{
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: 15rem;
+    }
+    .f_hr{
+        width: 400px;
+    }
+    .sidebar{
+        padding: 2rem;
+    }
+    .sidebar_items{
+        margin: 2rem 0;
+    }
+    .item_title h4{
+        font-size: 0.7rem;
+        color: #ccc;
+    }
+    .sidebar_items ul{
+        margin: 1rem 0;
+    }
+    .sidebar_items ul li {
+        margin: 0.2rem 0;
+        cursor: pointer;
+        padding: 0.6rem;
+        margin-left: -0.6rem;
+    }
+    .sidebar_items ul li:hover{
+        background-color: var(--hover-color);
+        color: var(--sec-text-color);
+        border-radius: 10px;
+    }
+    .sidebar_down{
+        position: fixed;
+        bottom: 0.5%;
+    }
+    .new_bot button{
+        margin: 1rem 0;
+        padding: 0.5rem 2rem;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--hover-color);
+        color: var(--sec-text-color);
+    }
+    .overview_cards{
+        display: flex;
+    }
+    .form_bot{
+        width: 400px;
+    }
+}
