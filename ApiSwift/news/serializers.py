@@ -1,7 +1,8 @@
 from rest_framework.serializers import ModelSerializer
 from .models import News
+from rest_framework import serializers
 
-
-class NewsSerializers(ModelSerializer):
+class NewsSerializer(ModelSerializer):
     class Meta:
-        models = News
+        model = News
+        exclude = ['id']

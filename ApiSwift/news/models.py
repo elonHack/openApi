@@ -1,7 +1,12 @@
 from django.db import models
 
+
 # Create your models here.
 class News(models.Model):
-    id = models.IntegerField(primary_key=True)
-    title = models.TextField()
-    date = models.DateField(auto_now=True)
+    title = models.CharField(max_length=200)
+    category = models.CharField(max_length=50, default=" ")
+    content = models.TextField()
+
+
+    def __str__(self) -> str:
+        return self.title
